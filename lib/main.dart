@@ -1,3 +1,4 @@
+import 'package:catalog/home_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -5,14 +6,11 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({ Key? key }) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home:Container(
-        child: Text("Welcome")
-      ),
+      debugShowCheckedModeBanner: false,
+      home: HomePage(),
     );
   }
 }
